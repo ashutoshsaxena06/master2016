@@ -1,6 +1,9 @@
 package diningedge.OnlineWeekend;
 
 import org.testng.annotations.Test;
+
+import com.util.Framework.SendFile;
+
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
@@ -11,7 +14,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;

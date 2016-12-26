@@ -1,4 +1,4 @@
-package diningedge.OnlineWeekend;
+package com.util.Framework;
 
 import java.awt.Robot;
 import java.awt.Toolkit;
@@ -15,10 +15,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import diningedge.OnlineWeekend.NewTest;
+
 public class SendFile extends NewTest {
-	public static void main(String str[]) {
-		System.out.println("Sending Mail ...");
-	}
 
 	public void sendMail() throws Exception {
 		WebDriver driver = new FirefoxDriver();
@@ -33,9 +32,10 @@ public class SendFile extends NewTest {
 		driver.findElement(By.xpath(".//*[@id='Passwd']")).sendKeys("@Shu13579");
 		// enter password
 		driver.findElement(By.xpath("//*[@id='signIn']")).click();
-		//wait to load Gmail account
-		WebDriverWait wait = new WebDriverWait(driver,200);
-		WebElement compose_btn = wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath("//div[contains(text(),'COMPOSE')]"))));
+		// wait to load Gmail account
+		WebDriverWait wait = new WebDriverWait(driver, 200);
+		WebElement compose_btn = wait
+				.until(ExpectedConditions.visibilityOfElementLocated((By.xpath("//div[contains(text(),'COMPOSE')]"))));
 		// click on sign in
 		compose_btn.click();
 		// click on compose button

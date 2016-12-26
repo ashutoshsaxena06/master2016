@@ -1,4 +1,4 @@
-package diningedge.OnlineWeekend;
+package com.util.Framework;
 
 		import java.util.concurrent.TimeUnit;
 
@@ -59,7 +59,7 @@ package diningedge.OnlineWeekend;
 
     public Object[][] Authentication() throws Exception{
 
-         Object[][] testObjArray = ImportDataFromExcel.getTableArray("D://ToolsQA//OnlineStore//src//testData//TestData.xlsx","Sheet1");
+         Object[][] testObjArray = ImportDataFromExcel.getTableArray("C:\\Users\\ashsaxen\\Desktop\\OnLineMacro-Manual-20161009.xlsx","Sheet1");
 
          return (testObjArray);
 
