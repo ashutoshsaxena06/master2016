@@ -15,9 +15,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import diningedge.OnlineWeekend.NewTest;
-
-public class SendFile extends NewTest {
+public class SendFile {
 
 	public void sendMail() throws Exception {
 		WebDriver driver = new FirefoxDriver();
