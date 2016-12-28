@@ -38,7 +38,7 @@ public class SendFile {
 		compose_btn.click();
 		// click on compose button
 
-		driver.findElement(By.xpath("//form[1]//textarea[1]")).sendKeys("frank@cut-edge.net");
+		driver.findElement(By.xpath("//form[1]//textarea[1]")).sendKeys("ashutoshsaxena06@gmail.com");
 		// enter email id where you need to send email
 		DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 		Calendar calobj = Calendar.getInstance();
